@@ -1,0 +1,171 @@
+section {
+  display: table;
+}
+
+.example-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+}
+
+.example-button-row {
+  display: table-cell;
+  width: 490px;
+}
+
+.example-button-row .mat-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+
+.example-container {
+  width: 100%;
+  height: calc(100% - 64px);
+  /* border: 1px solid rgba(0, 0, 0, 0.5); */
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.full-height {
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  
+}
+
+.example-tree-invisible {
+  display: none;
+}
+
+.example-tree ul,
+.example-tree li {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+mat-tree-node.mat-tree-node {
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(55, 55, 55);
+    a {
+      color: white;
+      border-left: solid 8px rgb(48, 84, 175);
+    }
+  }
+
+  a {
+    width: 100%;
+    height: 100%;
+    line-height: 48px;
+    padding-left: 20px;
+    user-select: none;
+    border-left: solid 8px transparent;
+  }
+}
+
+div.mat-tree-node {
+  min-width: 240px;
+  padding-left: 20px;
+  cursor: pointer;
+  user-select: none;
+  border-left: solid 8px transparent;
+  &:hover {
+    background-color: rgb(55, 55, 55);
+    border-left: solid 8px rgb(48, 84, 175);
+  }
+
+  button.chevron {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.main-card {
+  width: calc(100% - 70px);
+  margin: 20px 20px 0px 20px;
+  overflow-y: auto;
+}
+
+.main-card-title {
+  padding: 20px 0 10px 0;
+}
+
+.main-card-title-wrapper {
+  margin-top: -16px !important;
+  background-color: rgb(66, 66, 66);
+  position: sticky;
+  top: -16px;
+  margin-left: -15px;
+  padding-left: 15px;
+  margin-right: -15px;
+  padding-right: 15px;
+  z-index: 2;
+}
+
+a, div.mat-tree-node {
+  color: rgb(222, 222, 222);;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+mat-tree-node.mat-tree-node.menu-item-active {
+  background-color: rgb(55, 55, 55);
+  a {
+      border-left: solid 8px rgb(48, 84, 175);
+  } 
+  &:hover {
+      background-color: rgb(55, 55, 55);
+      a {
+          border-left: solid 8px rgb(48, 84, 175);
+      } 
+  }
+}
+
+span.group-name {
+  margin-left: 4px;
+}
+
+:host ::ng-deep {
+  ::-webkit-scrollbar {
+      width: 8px;
+  }
+ 
+  ::-webkit-scrollbar-track {
+      background: #777;
+      border-radius: 8px;
+  }
+ 
+  ::-webkit-scrollbar-thumb {
+      background: #555;
+      border-radius: 8px;
+  }
+ 
+  ::-webkit-scrollbar-thumb:hover {
+      background: rgb(78, 78, 78);
+  }
+}
+
+.example-margin {
+  margin: 10px;
+}
+
+.menu-settings-item {
+  color: white;
+}
